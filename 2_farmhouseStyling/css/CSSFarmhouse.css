@@ -1,0 +1,125 @@
+@charset "utf-8";
+/* CSS Document */
+/**********************header area****************/
+/*for the header - background color, padding, center allign text */
+header{
+	background-color: #592026;
+	text-align: center;
+	padding: 30px 0px;
+	/*padding shortcut works the same way as margin - tb rl*/
+	color: white;
+	
+}
+/*********************sections**********************/
+section {
+	/* all the default styles for all sections */
+max-width:1200px;
+background-color:#3B3B3D;
+	/* text colour */
+color:white;
+/*automatically centers element on page */
+margin:0 auto;
+padding: 30px;
+/*this will make the section the size of ALL the contents, even those floating*/
+overflow:hidden;
+	
+
+}
+
+/* Override with CLASS - more than one element to look the same but not ALL of the elements to look that way */
+.alternate{
+	background-color:#474041;
+}
+
+section img{
+	float:left;
+	margin-right: 40px;
+}
+
+img:hover{
+	resize: 200%;
+}
+
+/**********************footer**************************/
+footer{
+	background-color:#592026;
+	color:white;
+	text-align:center;
+	padding:30px;
+	font-family: 'Comic Sans MS';
+}
+
+/**********************Styled links********************/
+a:link{
+	color:white;
+	text-decoration:none;
+}
+
+/*previously been to the destination of the link */
+a:visited{
+	color:blue;
+}
+
+A:hover{
+	color:aqua;
+	/*get rid of underline*/
+	text-decoration:none;
+}
+
+/*when you are pressing down on the element*/
+a:active{
+	color:red;
+}
+
+/*******************Button styling*********************/
+button{
+	background-color:#e7e7e7;
+	padding: 16px 32px;
+	font-size: 14px;
+	/*change to a pointer*/
+	cursor:pointer;
+	border:2px solid #000000;
+	/*add a transition to fade between the states*/
+	transition-duration:1.5s;
+}
+
+button:hover{
+background-color:#7C7C7C;
+color:white;
+}
+
+button:active{
+	transition-duration:0.5s;
+	padding:0%;
+	font-size:1px;
+}
+
+
+nav ul{
+	/*removes the dots*/
+	list-style-type: none;
+	/*remove the spacing*/
+	margin:0;
+	background-color:black;
+	color:white;
+	padding:1%;
+}
+
+nav li{
+	display:inline;
+	padding:1%;
+}
+
+nav li a:hover{
+	transition-duration:0.5s;
+	font-size: 120%;
+	padding:inherit;
+}
+
+.sticky{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+}
+
+
